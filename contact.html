@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact - Christian Tappa">
+    <title>Contact - Christian Tappa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="./icons/tappa.jpg" class="rounded-circle mb-3" alt="Profile">
+        <h3>Christian Tappa</h3>
+        <p class="text-muted">BSIT Student at Global Reciprocal Colleges</p>
+        <nav class="nav flex-column">
+            <a class="nav-link text-light" href="index.html">Home</a>
+            <a class="nav-link text-light" href="about.html">About</a>
+            <a class="nav-link text-light" href="services.html">Services</a>
+            <a class="nav-link text-light" href="contact.html">Contact</a>
+        </nav>
+        <footer class="mt-auto">
+            <p>&copy; 2025 Tappa Professional Website. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <div class="main-content">
+        <div>
+            <section id="contact">
+                <h1>Contact Me</h1>
+                <p>If you have any questions or would like to get in touch, please feel free to reach out to me using the form below.</p>
+                
+                <form action="submit_form.php" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </section>
+        </div>
+        <div class="image-container">
+            <img src="./icons/tappa-removebg-preview.png" alt="Christian Tappa">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
